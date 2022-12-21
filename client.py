@@ -145,7 +145,6 @@ def server_listener():
         window.server_events.append(server.recv(1024).decode("utf8"))
 
 
-buttons = {}
 server = socket.socket()
 server.connect(("localhost", 50008))
 app = QApplication([])
